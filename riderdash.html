@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar (reuse from main page) -->
+    <nav class="navbar">
+        <div class="logo">Zero Crash</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Rider Dashboard -->
+    <div class="rider-dashboard-container">
+        <h1>Rider Dashboard</h1>
+
+        <!-- Stats Cards -->
+        <div class="stats-cards-container">
+            <div class="dashboard-card">
+                <h3>Average Speed</h3>
+                <p>55 km/h</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Total Distance Covered</h3>
+                <p>350 km</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Number of Trips</h3>
+                <p>25</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Helmet Compliance Rate</h3>
+                <p>92%</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Helmet Not Detected</h3>
+                <p>2</p>
+            </div>
+        </div>
+
+        <!-- Graph Container -->
+        <div class="charts-container">
+            <canvas id="performanceChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

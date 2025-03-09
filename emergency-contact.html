@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your consolidated CSS file -->
+</head>
+<body>
+    <!-- Navbar (Keep this same as your previous pages) -->
+    <nav class="navbar">
+        <div class="logo">Zero Crash</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Emergency Contact Container -->
+    <div class="emergency-container">
+        <h1>Register Your Emergency Contact</h1>
+        <div class="emergency-details-text">
+            <p>
+                
+                This emergency contact registration is part of an integrated motorcycle safety system. The system detects critical events such as severe impacts or sudden falls and automatically alerts the nearest hospital with the rider's location and impact data. 
+                Additionally, if the rider experiences an accident or any emergency situation, an alert will be sent to the emergency contact you provide below.
+            </p>
+            <p>
+                In case of an accident, your provided emergency contact will receive real-time notifications about the accident. They will be informed about the situation and your current location, ensuring timely action to ensure your safety.
+            </p>
+        </div>
+
+        <!-- Emergency Contact Form -->
+        <div class="emergency-form-wrapper">
+            <form action="submit-emergency-contact.php" method="POST">
+                <div class="emergency-form-group">
+                    <label for="name" class="emergency-form-label">Name</label>
+                    <input type="text" id="name" name="name" class="emergency-input-field" placeholder="Enter your name" required>
+                </div>
+                <div class="emergency-form-group">
+                    <label for="contact" class="emergency-form-label">Contact Number</label>
+                    <input type="text" id="contact" name="contact" class="emergency-input-field" placeholder="Enter contact number" required>
+                </div>
+                <div class="emergency-form-group">
+                    <label for="message" class="emergency-form-label">Message</label>
+                    <textarea id="message" name="message" rows="4" class="emergency-textarea-field" placeholder="Leave a message for your emergency contact"></textarea>
+                </div>
+                <button type="submit" class="emergency-submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

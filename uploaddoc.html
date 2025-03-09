@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Documents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Zero Crash</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="upload-container">
+        <h1>Upload Your Documents</h1>
+        <p>Please upload the following documents:</p>
+
+        <!-- Document Upload Form -->
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="document-box">
+                <h3>Driver's License (Front and Back)</h3>
+                <input type="file" id="license" name="license" accept="image/*,application/pdf">
+            </div>
+
+            <div class="document-box">
+                <h3>Bike Registration Certificate (RC)</h3>
+                <input type="file" id="rc" name="rc" accept="image/*,application/pdf">
+            </div>
+
+            <div class="document-box">
+                <h3>Insurance Policy Document</h3>
+                <input type="file" id="insurance" name="insurance" accept="image/*,application/pdf">
+            </div>
+
+            <div class="document-box">
+                <h3>Biker’s ID Proof (Aadhaar, Passport, etc.)</h3>
+                <input type="file" id="id-proof" name="id-proof" accept="image/*,application/pdf">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Documents</button>
+        </form>
+    </div>
+
+    <!-- Optional: Success message -->
+    <div id="successMessage" style="display:none; color:green; text-align:center; padding: 20px;">
+        Documents uploaded successfully!
+    </div>
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Crash</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Zero Crash</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Drive Safe, Prevent Crashes</h1>
+            <p>Ensuring safety with AI-driven technology.</p>
+        </div>
+    </section>
+
+    <!-- Box Model Section -->
+    <section class="box-container">
+        <div class="box" onclick="window.location.href='biker.html';">
+            <div class="box-icon">&#128736;</div>
+            <h3>Biker Details</h3>
+            <p>Manage and view detailed information about bikers to ensure accurate records and safety compliance.</p>
+        </div>
+        <div class="box" onclick="window.location.href='uploaddoc.html';">
+            <div class="box-icon">&#128193;</div>
+            <h3>Upload Documents</h3>
+            <p>Upload necessary documents easily and securely for processing and verification.</p>
+        </div>
+        <div class="box" onclick="window.location.href='emergency-contact.html';">
+            <div class="box-icon">&#128680;</div>
+            <h3>Emergency Contact Notification</h3>
+            <p>Set up notifications for emergency contacts to ensure immediate response in case of accidents.</p>
+        </div>
+        <div class="box" onclick="window.location.href='insurance.html';">
+            <div class="box-icon">&#x1F6E1;</div>
+            <h3>See Your Insurance</h3>
+            <p>You can view the insurance documents you have uploaded for your bike. This allows you to confirm that all necessary information is accurate and up-to-date.</p>
+        </div>
+        <div class="box" onclick="window.location.href='location.html';">
+            <div class="box-icon">&#x1F4CD;</div>
+            <h3>Location of Biker</h3>
+            <p>The system will display the real-time location of both the biker and the bike on an integrated map using GPS data.</p>
+        </div>
+        <div class="box" onclick="window.location.href='riderdash.html';">
+            <div class="box-icon">&#x1F3CD;</div>
+            <h3>Dashboard of Biker</h3>
+            <p>The Rider Dashboard will provide a comprehensive overview of the rider's performance, showcasing key metrics.</p>
+        </div>
+        <div class="box" onclick="window.location.href='bikemaintenance.html';">
+            <div class="box-icon">&#x1F6E0;</div>
+            <h3>Bike Maintenance Schedule</h3>
+            <p>The Bike Maintenance Schedule tracks essential service tasks such as oil changes, tire pressure checks, and brake inspections.</p>
+        </div>
+    </section>
+
+    <!-- Our Idea and Accident Statistics Sections -->
+    <section class="info-container">
+        <!-- Our Idea Section -->
+        <div class="idea">
+            <h1>Our Idea</h1>
+            <p>
+                Our cutting-edge technology integrates an AI-powered camera directly into the motorcycle to ensure helmet use. 
+                If the rider isn’t wearing a helmet, our AI system will control the starter motor circuit, which gets power from the battery through a solenoid. By managing this circuit, the motor is blocked until helmet detection is confirmed. 
+                This automatic slowdown and stop feature helps keep the rider and others on the road safe, making sure everyone is protected.
+            </p>
+        </div>
+        <div class="idea-image">
+            <img src="assets/ai.jpeg" alt="AI Motorcycle" />
+        </div>
+    </section>
+
+    <section class="accident-container">
+        <!-- Accident Statistics Section -->
+        <div class="chart-container">
+            <canvas id="accidentChart"></canvas>
+        </div>
+        <div class="accident-info">
+            <h2>Accident Statistics</h2>
+            <p>
+                The pie chart below illustrates the stark contrast between accidents involving helmet usage and those that occur due to lack of helmets. 
+                The data highlights the critical need for helmet enforcement to significantly reduce fatalities and improve overall road safety. 
+                By integrating our technology, we aim to address this issue effectively and make roads safer for everyone.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

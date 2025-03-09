@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Safety Advisory</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Zero Crash</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>AI-Based Safety Advisory</h1>
+        <p>Enhance your riding habits with personalized AI-based safety tips.</p>
+    </header>
+
+    <!-- Main Section -->
+    <section class="advisory-section">
+        <div class="container">
+            <div class="advisory-info">
+                <h2>Purpose</h2>
+                <p>Our AI-based system analyzes your riding habits to provide actionable safety tips, recommend safer routes, and improve fuel efficiency.</p>
+            </div>
+
+            <div class="chart-container">
+                <h3>Riding Habits Analysis</h3>
+                <canvas id="ridingChart"></canvas>
+            </div>
+
+            <div class="tip-container">
+                <h3>Personalized Safety Tips</h3>
+                <div class="tip-box">
+                    <h4>Tip 1</h4>
+                    <p>Maintain a steady speed to improve fuel efficiency.</p>
+                </div>
+                <div class="tip-box">
+                    <h4>Tip 2</h4>
+                    <p>Wear your helmet at all times to reduce accident risks.</p>
+                </div>
+                <div class="tip-box">
+                    <h4>Tip 3</h4>
+                    <p>Avoid frequent stops and starts to conserve fuel.</p>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>Accident-Prone Zones on Your Route</h3>
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

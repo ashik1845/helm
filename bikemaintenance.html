@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Maintenance Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Zero Crash</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Maintenance Schedule Content -->
+    <div class="maintenance-container">
+        <h1>Bike Maintenance Schedule</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <form id="maintenanceForm">
+                <label for="bikeModel">Bike Model:</label>
+                <select id="bikeModel">
+                    <option value="Honda">Honda</option>
+                    <option value="Yamaha">Yamaha</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Kawasaki">Kawasaki</option>
+                </select>
+
+                <label for="mileage">Current Mileage (km):</label>
+                <input type="number" id="mileage" placeholder="Enter mileage">
+
+                <button type="submit">Calculate Next Maintenance</button>
+            </form>
+        </div>
+
+        <!-- Upcoming Maintenance Section -->
+        <div class="maintenance-schedule">
+            <h2>Upcoming Maintenance Tasks</h2>
+            <div class="progress-bars">
+                <div class="progress-item">
+                    <h3>Oil Change</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <p>Next in 500 km</p>
+                </div>
+                <div class="progress-item">
+                    <h3>Tire Check</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>Next in 1500 km</p>
+                </div>
+                <div class="progress-item">
+                    <h3>Brake Maintenance</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                    <p>Next in 3000 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts Section -->
+        <div class="alerts">
+            <h2>Maintenance Alerts</h2>
+            <ul>
+                <li><span class="alert upcoming">Oil change due in 500 km</span></li>
+                <li><span class="alert missed">Tire check missed! Overdue by 100 km</span></li>
+            </ul>
+        </div>
+
+        <!-- Completed Tasks Section -->
+        <div class="completed-tasks">
+            <h2>Recently Completed Maintenance</h2>
+            <ul>
+                <li>Oil change - 1 month ago</li>
+                <li>Tire check - 2 months ago</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
